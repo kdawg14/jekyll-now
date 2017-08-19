@@ -287,3 +287,21 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+img[alt$=">"] {
+  float:right;
+}
+
+img[alt$="<"] {
+  float:left;
+  padding-right: 1em;
+  padding-bottom: 0.1em;
+}
+
+img[alt$="<>"] {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    float: none!important;
+}
